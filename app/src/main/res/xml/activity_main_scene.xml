@@ -11,20 +11,24 @@
         <OnClick motion:targetId="@id/constraintLayout"
             motion:clickAction="toggle" />
 
+        <OnSwipe motion:targetId="@id/constraintLayout"
+            motion:clickAction="toggle" />
+
         <KeyFrameSet>
        </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            android:layout_height="112dp"
+            android:layout_height="110dp"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintHorizontal_bias="0.495"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="307dp"
+            android:layout_width="304dp"
             android:id="@+id/constraintLayout"
-            android:layout_marginTop="80dp" />
+            android:layout_marginTop="80dp"
+            motion:layout_editor_absoluteX="52dp" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
